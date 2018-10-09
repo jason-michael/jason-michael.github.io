@@ -1,0 +1,63 @@
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* Wrapper (border chevrons) */
+/* Inspired by Codegrid: https://www.youtube.com/watch?v=LyFOf5nRjNo&t=257s */
+#hero .wrapper {
+    position: sticky;
+    top: 9%;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+#hero .wrapper::before,
+#hero .wrapper::after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+}
+#hero .wrapper::before {
+    left: 0;
+    top: 0;
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+}
+#hero .wrapper::after {
+    width: 8px;
+    height: 8px;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #333;
+}
+
+#hero p {
+    font-size: 1.33rem;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #777;
+}
+
+
+@media (max-width:500px) {
+    #hero h1 {
+        font-size: 1.75rem;
+    }
+
+    #hero p {
+        font-size: .75rem;
+    }
+}

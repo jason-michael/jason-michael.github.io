@@ -1,0 +1,143 @@
+#showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Figure */
+figure {
+    position: relative;
+}
+
+/* Image */
+.figure-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    filter: saturate(50%);
+}
+
+/* Overlay */
+.figure-overlay {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .9);
+    opacity: 0;
+    transition: all .35s;
+}
+
+.figure-overlay:hover {
+    opacity: 1;
+}
+
+.figure-overlay h3 {
+    color: #eee;
+    flex: .25;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.figure-overlay p {
+    flex: .25;
+    color: #777;    
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.figure-overlay a {
+    color: firebrick;
+}
+
+.figure-overlay a:hover {
+    color: #fff;
+}
+
+/* Overlay links (footer) */
+.overlay-links {
+    flex: 2;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.overlay-links li {
+    margin: 0 10px 0 0;
+}
+
+.overlay-links a {
+    color: #555;
+    transition: color .35s;
+}
+
+/* Showcase blocks (non-image) */
+.block {
+    padding: 40px;
+    background-color: #222;
+    color: #777;
+}
+
+.block2 p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.block-link {
+    color: firebrick;
+}
+
+/*==============================
+    Figure img adjustments
+==============================*/
+.figure2 img {
+    object-position: 0;
+}
+
+/*==============================
+    Media Queries
+==============================*/
+@media (min-width: 600px) {
+    #showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .block1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .block2 {
+        grid-column: span 2;
+    }
+
+    .figure1 {
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+
+    .figure2,
+    .figure3 {
+        grid-column: span 3;
+    }
+
+    .figure4,
+    .figure5 {
+        grid-column: span 2;
+    }
+
+}

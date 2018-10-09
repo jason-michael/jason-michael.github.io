@@ -1,0 +1,26 @@
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    margin: 10px;
+    font-size: 1.25rem;
+}
+
+footer a {
+    color: #555;
+}
+
+footer a:hover {
+    color: #000;
+}
