@@ -1,13 +1,21 @@
+/* UI Elements */
 const showcase = document.getElementById('showcase');
 const header = document.getElementById('header');
 const heroWrapper = document.querySelector('#hero .wrapper');
+const scrollNote = document.querySelector('.scroll-note');
 let heroWrapperTop = 50;
 
 window.addEventListener('scroll', () => {
 
+    let bodyScrollTop = document.scrollingElement.scrollTop;
+
+    // "Scroll Down" text fade
+    scrollNote.style.opacity = .5 - (bodyScrollTop / 1000);
+    if (bodyScrollTop === 0) scrollNote.style.opacity = 1;
+
     // Toggle dark theme
     let affectedElements = [document.body, header];
-    if (document.scrollingElement.scrollTop >= (showcase.offsetTop - 180)) {
+    if (bodyScrollTop >= (showcase.offsetTop - 300)) {
         affectedElements.forEach(elem => {
             elem.classList.add('dark');
         });
@@ -17,7 +25,7 @@ window.addEventListener('scroll', () => {
         });
     }
 
-    // Hero wrapper parallax
-    heroWrapperTop = document.scrollingElement.scrollTop / 16;
+    // Hero .wrapper parallax
+    heroWrapperTop = bodyScrollTop / 16;
     heroWrapper.style.top = `${heroWrapperTop}%`;
 });

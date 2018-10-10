@@ -116,6 +116,11 @@ figure:hover .figure-overlay a:hover {
 
 .block-link {
     color: firebrick;
+    transition: color .25s;
+}
+
+.block-link:hover {
+    color: #fff;
 }
 
 /*==============================
