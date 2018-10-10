@@ -19,6 +19,7 @@ body {
     max-width: 80vw;
     margin: 0 auto;
     font-family: 'Raleway';
+    transition: background-color .5s;
 }
 
 /* Scrollbar */
@@ -47,6 +48,7 @@ header {
     font-weight: 600;
     font-size: 1.25rem;
     background: #fff;
+    transition: background-color .5s;
 }
 
 header .logo {
@@ -58,6 +60,11 @@ header .menu {
     flex: 1;
     padding: 12px 0;
     text-align: right;
+}
+
+.dark {
+    background-color: #111;
+    color: #eee;
 }
 
 /*==============================
