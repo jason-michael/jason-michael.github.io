@@ -3,6 +3,8 @@ const showcase = document.getElementById('showcase');
 const header = document.getElementById('header');
 const heroWrapper = document.querySelector('#hero .wrapper');
 const scrollNote = document.querySelector('.scroll-note');
+const menuButton = document.querySelector('.menu-button');
+let isMenuOpen = false;
 let heroWrapperTop = 50;
 
 window.addEventListener('scroll', () => {
@@ -29,3 +31,14 @@ window.addEventListener('scroll', () => {
     heroWrapperTop = bodyScrollTop / 16;
     heroWrapper.style.top = `${heroWrapperTop}%`;
 });
+
+function toggleMenu() {
+    if (!isMenuOpen) {
+        menu.classList.add('open');
+        isMenuOpen = true;
+    } else {
+        menu.classList.remove('open');
+        isMenuOpen = false;
+    }
+}
+
