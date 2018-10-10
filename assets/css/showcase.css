@@ -32,6 +32,10 @@ figure:hover .figure-overlay a:hover {
     color: #fff;
 }
 
+figure:hover .figure-img {
+    filter: saturate(50%);
+}
+
 /* Image */
 .figure-img {
     display: block;
@@ -39,7 +43,8 @@ figure:hover .figure-overlay a:hover {
     height: 100%;
     min-height: 300px;
     object-fit: cover;
-    filter: saturate(50%);
+    filter: saturate(0%);
+    transition: .5s;
 }
 
 /* Overlay */
@@ -98,7 +103,7 @@ figure:hover .figure-overlay a:hover {
 }
 
 .overlay-links a {
-    color: #555;
+    color: transparent;
     transition: color .35s;
 }
 
@@ -107,6 +112,10 @@ figure:hover .figure-overlay a:hover {
     padding: 40px;
     background-color: #222;
     color: #777;
+}
+
+.block1 {
+    position: relative;
 }
 
 .block2 p {
@@ -133,7 +142,7 @@ figure:hover .figure-overlay a:hover {
 /*==============================
     Media Queries
 ==============================*/
-@media (min-width: 1024px) { /* Over 1024px */
+@media (min-width: 1100px) { /* Over 1100px */
     #showcase {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -141,7 +150,7 @@ figure:hover .figure-overlay a:hover {
 
     /* Figure hover */
     figure:hover .figure-overlay {
-        width: 200px;
+        width: 220px;
     }
 
     .block1 {
