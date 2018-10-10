@@ -1,3 +1,4 @@
+/* Showcase */
 #showcase h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -8,6 +9,27 @@
 /* Figure */
 figure {
     position: relative;
+}
+
+/* Figure hover */
+figure:hover .figure-overlay {
+    opacity: .98;
+    width: 50%;
+    background: firebrick;
+    color: #fff;
+}
+
+figure:hover .figure-overlay h3,
+figure:hover .figure-overlay a {
+    color: #111;
+}
+
+figure:hover .figure-overlay p {
+    color: #ccc;
+}
+
+figure:hover .figure-overlay a:hover {
+    color: #fff;
 }
 
 /* Image */
@@ -33,12 +55,8 @@ figure {
     flex-direction: column;
     justify-content: center;
     background: rgba(0, 0, 0, .9);
-    opacity: 0;
-    transition: all .35s;
-}
-
-.figure-overlay:hover {
     opacity: 1;
+    transition: all .4s;
 }
 
 .figure-overlay h3 {
@@ -50,7 +68,7 @@ figure {
 
 .figure-overlay p {
     flex: .25;
-    color: #777;    
+    color: #777;
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -110,10 +128,15 @@ figure {
 /*==============================
     Media Queries
 ==============================*/
-@media (min-width: 600px) {
+@media (min-width: 1024px) { /* Over 1024px */
     #showcase {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* Figure hover */
+    figure:hover .figure-overlay {
+        width: 200px;
     }
 
     .block1 {

@@ -10,10 +10,10 @@
 /* Wrapper (border chevrons) */
 /* Inspired by Codegrid: https://www.youtube.com/watch?v=LyFOf5nRjNo&t=257s */
 #hero .wrapper {
-    position: sticky;
-    top: 9%;
+    position: relative;
     padding: 10px;
     margin-bottom: 14px;
+    animation: fadeInUp 1.5s ease-in-out 1;
 }
 #hero .wrapper::before,
 #hero .wrapper::after {
@@ -51,7 +51,27 @@
     color: #777;
 }
 
+/*==============================
+    Animations
+==============================*/
+@keyframes fadeInUp {
+    0% {
+        position: relative;
+        top: 10%;
+        opacity: 0;
+    }
 
+    100% {
+        position: relative;
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+
+/*==============================
+    Media Queries
+==============================*/
 @media (max-width:500px) {
     #hero h1 {
         font-size: 1.75rem;
