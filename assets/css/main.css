@@ -7,6 +7,8 @@
 /*==============================
     Stylesheet Imports
 ==============================*/
+@import url('header.css');
+@import url('sidemenu.css');
 @import url('hero.css');
 @import url('showcase.css');
 @import url('footer.css');
@@ -35,35 +37,8 @@ body::-webkit-scrollbar-thumb {
     background: #222;
 }
 
-
-header {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: 80vw;
-    height: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.25rem;
-    background: #fff;
-    transition: background-color .5s;
-}
-
-header .logo {
-    flex: 1;
-    padding: 12px 0;
-}
-
-header .menu {
-    flex: 1;
-    padding: 12px 0;
-    text-align: right;
-}
-
 .dark {
-    background-color: #111;
+    background-color: #111 !important;
     color: #eee;
 }
 
