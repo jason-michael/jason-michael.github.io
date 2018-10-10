@@ -1,5 +1,7 @@
 const showcase = document.getElementById('showcase');
 const header = document.getElementById('header');
+const heroWrapper = document.querySelector('#hero .wrapper');
+let heroWrapperTop = 50;
 
 window.addEventListener('scroll', () => {
 
@@ -14,4 +16,8 @@ window.addEventListener('scroll', () => {
             elem.classList.remove('dark');
         });
     }
+
+    // Hero wrapper parallax
+    heroWrapperTop = document.scrollingElement.scrollTop / 16;
+    heroWrapper.style.top = `${heroWrapperTop}%`;
 });
