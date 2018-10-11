@@ -19,11 +19,15 @@ header .logo {
     padding: 12px 0;
 }
 
-header .menu {
+header .menu-button {
     position: relative;
     flex: 1;
     padding: 12px 0;
     text-align: right;
+}
+
+header .menu-button:hover {
+    cursor: pointer;
 }
 
 /*==============================

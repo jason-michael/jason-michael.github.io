@@ -1,0 +1,59 @@
+#sidemenu {
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background: transparent !important;
+    transition: .5s;
+    overflow: hidden;
+    z-index: 99;
+}
+
+/* Sidemenu links */
+#sidemenu .sidemenu-link {
+    margin-bottom: -1px;
+    padding: 20px;
+    border-right: 2px solid #222;
+    color: #222;
+    background: #fff;   
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#sidemenu .sidemenu-link:hover {
+    color: firebrick;
+    border-color: firebrick;
+    border-right: 10px solid firebrick;
+}
+
+/* Sidemenu dark theme */
+#sidemenu.dark .sidemenu-link {
+    background: #111;
+}
+
+#sidemenu.dark .sidemenu-link {
+    border-color: firebrick;
+}
+
+#sidemenu.dark a {
+    color: #eee;
+}
+
+/* Sidemenu open */
+#sidemenu.open {
+    height: 23%;
+}
+
+/*==============================
+    Media Queries
+==============================*/
+@media (min-width: 500px) { /* Above 500px */
+    #sidemenu {
+        width: 200px;
+        right: 9.5vw;
+    }
+}

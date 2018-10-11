@@ -4,6 +4,7 @@ const header = document.getElementById('header');
 const heroWrapper = document.querySelector('#hero .wrapper');
 const scrollNote = document.querySelector('.scroll-note');
 const menuButton = document.querySelector('.menu-button');
+const menu = document.getElementById('sidemenu');
 let isMenuOpen = false;
 let heroWrapperTop = 50;
 
@@ -16,7 +17,7 @@ window.addEventListener('scroll', () => {
     if (bodyScrollTop === 0) scrollNote.style.opacity = 1;
 
     // Toggle dark theme
-    let affectedElements = [document.body, header];
+    let affectedElements = [document.body, header, menu];
     if (bodyScrollTop >= (showcase.offsetTop - 300)) {
         affectedElements.forEach(elem => {
             elem.classList.add('dark');
