@@ -1,3 +1,6 @@
+/*==============================
+    Hero.css
+==============================*/
 #hero {
     height: 100vh;
     display: flex;
@@ -8,8 +11,8 @@
     text-align: center;
 }
 
-/* Wrapper (border chevrons) */
-/* Inspired by Codegrid: https://www.youtube.com/watch?v=LyFOf5nRjNo&t=257s */
+/* Wrapper (corner chevrons) */
+/* ! Inspired by Codegrid: https://www.youtube.com/watch?v=LyFOf5nRjNo&t=257s */
 #hero .wrapper {
     position: relative;
     padding: 10px;
@@ -39,7 +42,7 @@
     border-bottom: 2px solid #333;
 }
 
-/* name and role */
+/* Name and role */
 #hero h1 {
     font-size: 2.5rem;
     font-weight: 600;
