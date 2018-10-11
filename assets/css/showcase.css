@@ -1,6 +1,13 @@
 /*==============================
     Showcase.css
 ==============================*/
+.anchor {
+    position: relative;
+    display: block;
+    top: -60px;
+    visibility: hidden;
+}
+
 #showcase h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
