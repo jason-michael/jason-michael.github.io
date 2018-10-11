@@ -30,8 +30,8 @@
     <!-- Sidemenu -->
     <div id="sidemenu">
         <a href="#hero" class="sidemenu-link" onclick="toggleSidemenu()">Home</a>
-        <a href="#showcase" class="sidemenu-link" onclick="toggleSidemenu()">Showcase</a>
-        <a href="#contact" class="sidemenu-link" onclick="toggleSidemenu()">Contact</a>
+        <a href="#showcase-anchor" class="sidemenu-link" onclick="toggleSidemenu()">Showcase</a>
+        <a href="#contact" class="sidemenu-link" onclick="toggleSidemenu(), flashFooter()">Contact</a>
     </div>
 
 
@@ -49,6 +49,10 @@
 
 
     <!-- Showcase (Portfolio) -->
+
+    <!-- This div is needed to offest the fixed header when navigating to the Showcase -->
+    <div id="showcase-anchor" class="anchor"></div>
+    
     <section id="showcase">
 
         <!-- ! This component was inspired by Codegrid: https://www.youtube.com/watch?v=BbKY4rR3Vls&t=101s -->
@@ -150,7 +154,7 @@
         </ul>
         <a href="mailto:michael.jason@outlook.com">michael.jason@outlook.com</a>
     </footer>
-    
+
 
     <!-- javascript -->
     <script src="assets/js/main.js"></script>

@@ -3,6 +3,7 @@
  */
 const menu = document.getElementById('sidemenu');
 const header = document.getElementById('header');
+const footer = document.getElementById('contact');
 const showcase = document.getElementById('showcase');
 const scrollNote = document.querySelector('.scroll-note');
 const wrapper = document.querySelector('#hero .wrapper');
@@ -19,6 +20,13 @@ function toggleSidemenu() {
         menu.classList.remove('open');
         isMenuOpen = false;
     }
+}
+
+function flashFooter() {
+    footer.classList.add('flash');
+    setTimeout(() => {
+        footer.classList.remove('flash');
+    }, 1000);
 }
 
 /**

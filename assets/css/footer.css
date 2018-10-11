@@ -24,3 +24,13 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+footer.flash {
+    animation: flash 1s ease-in-out 1;
+}
+
+@keyframes flash {
+    50% {
+        background: firebrick;
+    }
+}
