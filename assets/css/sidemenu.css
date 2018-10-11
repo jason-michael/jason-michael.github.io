@@ -1,3 +1,6 @@
+/*==============================
+    Sidemenu.css
+==============================*/
 #sidemenu {
     position: fixed;
     top: 60px;
@@ -39,11 +42,12 @@
     border-color: firebrick;
 }
 
+/* Dark theme */
 #sidemenu.dark a {
     color: #eee;
 }
 
-/* Sidemenu open */
+/* Sidemenu open (used as a toggle) */
 #sidemenu.open {
     height: 23%;
 }
