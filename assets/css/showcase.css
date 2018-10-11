@@ -1,4 +1,6 @@
-/* Showcase */
+/*==============================
+    Showcase.css
+==============================*/
 #showcase h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -86,7 +88,7 @@ figure:hover .figure-img {
     color: #fff;
 }
 
-/* Overlay links (footer) */
+/* Overlay links */
 .overlay-links {
     flex: 2;
     width: 100%;
