@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
+
     <!-- Header -->
     <header id="header">
         <h1 class="logo">JM</h1>
@@ -23,12 +26,14 @@
         </div>
     </header>
 
+
     <!-- Sidemenu -->
     <div id="sidemenu">
         <a href="#hero" class="sidemenu-link" onclick="toggleSidemenu()">Home</a>
         <a href="#showcase" class="sidemenu-link" onclick="toggleSidemenu()">Showcase</a>
         <a href="#contact" class="sidemenu-link" onclick="toggleSidemenu()">Contact</a>
     </div>
+
 
     <!-- Hero -->
     <section id="hero">
@@ -42,18 +47,19 @@
         </div>
     </section>
 
+
     <!-- Showcase (Portfolio) -->
     <section id="showcase">
 
-        <!-- This component was inspired by Codegrid: https://www.youtube.com/watch?v=BbKY4rR3Vls&t=101s -->
+        <!-- ! This component was inspired by Codegrid: https://www.youtube.com/watch?v=BbKY4rR3Vls&t=101s -->
 
-        <!-- Showcase block -->
+        <!-- "Showcase" block -->
         <section class="block block1">
             <h2 class="flex-center">Showcase</h2>
             <p>Here is some of my best work so far.</p>
         </section>
 
-        <!-- Featured Project: ISS Tracker -->
+        <!-- 1. ISS Tracker -->
         <figure class="figure1">
             <img src="assets/images/iss.png" class="figure-img">
             <div class="figure-overlay">
@@ -69,7 +75,7 @@
             </div>
         </figure>
 
-        <!-- Project 2: Giphy Studio -->
+        <!-- 2. Giphy Studio -->
         <figure class="figure2">
             <img src="assets/images/giphy.png" class="figure-img">
             <div class="figure-overlay">
@@ -83,7 +89,7 @@
             </div>
         </figure>
 
-        <!-- Project 3: RPS Multiplayer -->
+        <!-- 3. RPS Multiplayer -->
         <figure class="figure3">
             <img src="assets/images/rps.png" class="figure-img">
             <div class="figure-overlay">
@@ -97,7 +103,7 @@
             </div>
         </figure>
 
-        <!-- Project 4: Hangman -->
+        <!-- 4. Hangman -->
         <figure class="figure4">
             <img src="assets/images/hangman.png" class="figure-img">
             <div class="figure-overlay">
@@ -111,7 +117,7 @@
             </div>
         </figure>
 
-        <!-- Project 5: Trivia Game -->
+        <!-- 5. Trivia Game -->
         <figure class="figure5">
             <img src="assets/images/trivia.png" class="figure-img">
             <div class="figure-overlay">
@@ -125,13 +131,15 @@
             </div>
         </figure>
 
-        <!-- Other work block -->
+        <!-- "Other work" block -->
         <section class="block block2">
             <h3>Like what you see?</h3>
             <p>Check out my <a href="https://github.com/jason-michael?tab=repositories" class="block-link" target="_blank">
                     other work.</a></p>
         </section>
-    </section>
+
+    </section><!-- ./showcase -->
+
 
     <!-- Footer -->
     <footer id="contact">
@@ -140,8 +148,9 @@
             <li><a href="https://www.linkedin.com/in/jason-michael-23bb83164/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://www.facebook.com/people/Jason-Michael/100021793363734" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
-        <a href="#">michael.jason@outlook.com</a>
+        <a href="mailto:michael.jason@outlook.com">michael.jason@outlook.com</a>
     </footer>
+    
 
     <!-- javascript -->
     <script src="assets/js/main.js"></script>
