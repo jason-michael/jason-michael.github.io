@@ -1,39 +1,17 @@
-/* UI Elements */
-const showcase = document.getElementById('showcase');
-const header = document.getElementById('header');
-const heroWrapper = document.querySelector('#hero .wrapper');
-const scrollNote = document.querySelector('.scroll-note');
-const menuButton = document.querySelector('.menu-button');
+/**
+ * UI elements
+ */
 const menu = document.getElementById('sidemenu');
+const header = document.getElementById('header');
+const showcase = document.getElementById('showcase');
+const scrollNote = document.querySelector('.scroll-note');
+const wrapper = document.querySelector('#hero .wrapper');
+const themedElements = [document.body, header, menu];
+
 let isMenuOpen = false;
-let heroWrapperTop = 50;
+let wrapperY = 50;
 
-window.addEventListener('scroll', () => {
-
-    let bodyScrollTop = document.scrollingElement.scrollTop;
-
-    // "Scroll Down" text fade
-    scrollNote.style.opacity = .5 - (bodyScrollTop / 1000);
-    if (bodyScrollTop === 0) scrollNote.style.opacity = 1;
-
-    // Toggle dark theme
-    let affectedElements = [document.body, header, menu];
-    if (bodyScrollTop >= (showcase.offsetTop - 300)) {
-        affectedElements.forEach(elem => {
-            elem.classList.add('dark');
-        });
-    } else {
-        affectedElements.forEach(elem => {
-            elem.classList.remove('dark');
-        });
-    }
-
-    // Hero .wrapper parallax
-    heroWrapperTop = bodyScrollTop / 16;
-    heroWrapper.style.top = `${heroWrapperTop}%`;
-});
-
-function toggleMenu() {
+function toggleSidemenu() {
     if (!isMenuOpen) {
         menu.classList.add('open');
         isMenuOpen = true;
@@ -43,3 +21,29 @@ function toggleMenu() {
     }
 }
 
+/**
+ *  Contains all of the page's scroll-based effects.
+ */
+window.addEventListener('scroll', () => {
+
+    let scrollPosition = document.scrollingElement.scrollTop;
+
+    // "Scroll Down" text fade in/out.
+    scrollNote.style.opacity = .5 - (scrollPosition / 1000);
+    if (scrollPosition === 0) scrollNote.style.opacity = 1;
+
+    // Toggle dark/light theme.
+    if (scrollPosition >= (showcase.offsetTop - 300)) {
+        themedElements.forEach(elem => {
+            elem.classList.add('dark');
+        });
+    } else {
+        themedElements.forEach(elem => {
+            elem.classList.remove('dark');
+        });
+    }
+
+    // Hero parallax effect.
+    wrapperY = scrollPosition / 16;
+    wrapper.style.top = `${wrapperY}%`;
+});
