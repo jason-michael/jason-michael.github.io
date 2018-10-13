@@ -1,6 +1,3 @@
-/**
- * UI elements
- */
 const menu = document.getElementById('sidemenu');
 const header = document.getElementById('header');
 const footer = document.getElementById('contact');
@@ -8,7 +5,6 @@ const showcase = document.getElementById('showcase');
 const scrollNote = document.querySelector('.scroll-note');
 const wrapper = document.querySelector('#hero .wrapper');
 const themedElements = [document.body, header, menu];
-
 let isMenuOpen = false;
 let wrapperY = 50;
 

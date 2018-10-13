@@ -37,6 +37,7 @@ body::-webkit-scrollbar-thumb {
     background: #222;
 }
 
+/* Dark theme */
 .dark {
     background-color: #111 !important;
     color: #eee;
