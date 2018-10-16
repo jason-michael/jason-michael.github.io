@@ -15,6 +15,14 @@
     color: #fff;
 }
 
+.featured {
+    color: firebrick;
+    transition: color .25s;
+}
+
+.node {
+    color: #026e00;
+}
 /* Figure */
 figure {
     position: relative;
@@ -26,6 +34,11 @@ figure:hover .figure-overlay {
     width: 50%;
     background: firebrick;
     color: #fff;
+}
+
+figure:hover .featured,
+figure:hover .node {
+    color: white;
 }
 
 figure:hover .figure-overlay h3,
@@ -43,6 +56,10 @@ figure:hover .figure-overlay a:hover {
 
 figure:hover .figure-img {
     filter: saturate(50%);
+}
+
+.figure6:hover .figure-overlay {
+    background: #013f00;
 }
 
 /* Image */
@@ -73,11 +90,17 @@ figure:hover .figure-img {
     transition: all .4s;
 }
 
+.figure6 .figure-overlay {
+    left: auto;
+    right: 0;
+}
+
 .figure-overlay h3 {
     color: #eee;
     flex: .25;
     margin-bottom: 10px;
     font-size: 1.5rem;
+    transition: .25s;
 }
 
 .figure-overlay p {
@@ -184,6 +207,10 @@ figure:hover .figure-img {
     .figure4,
     .figure5 {
         grid-column: span 2;
+    }
+
+    .figure6 {
+        grid-column: span 6;
     }
 
 }
