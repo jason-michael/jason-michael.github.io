@@ -17,6 +17,10 @@
 /*==============================
     Elements
 ==============================*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 80vw;
     margin: 0 auto;
@@ -30,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #ccc;
+    background: #fff;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -38,10 +42,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Dark theme */
+body.dark::-webkit-scrollbar-track {
+    background: #111;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+    background: firebrick;
+}
+
 .dark {
     background-color: #111 !important;
     color: #eee;
 }
+
 
 /*==============================
     Media Queries
