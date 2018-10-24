@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Jason Michael</title>
+    <title>Jason Michael | Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +19,9 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <h1 class="logo">JM</h1>
+        <div class="logo">
+            <h1 onclick="navigate('index.html')">JM</h1>
+        </div>
         <div class="menu-button" onclick="toggleSidemenu()">
             <i id="menu-button-icon" class="fas fa-bars"></i>
         </div>
@@ -29,6 +31,7 @@
     <div id="sidemenu">
         <a href="#hero" class="sidemenu-link" onclick="toggleSidemenu()">Home</a>
         <a href="#showcase-anchor" class="sidemenu-link" onclick="toggleSidemenu()">Showcase</a>
+        <a href="portfolio.html" class="sidemenu-link">Portfolio</a>
         <a href="#contact" class="sidemenu-link" onclick="toggleSidemenu(), flashFooter()">Contact</a>
     </div>
 
@@ -47,9 +50,9 @@
     <!-- Showcase (Portfolio) -->
     <!-- This div is needed to offest the fixed header when navigating to the Showcase -->
     <div id="showcase-anchor" class="anchor"></div>
-    
+
     <section id="showcase">
-        
+
         <!-- ! This section was inspired by Codegrid: https://www.youtube.com/watch?v=BbKY4rR3Vls&t=101s -->
 
         <!-- "Showcase" block -->
@@ -68,8 +71,8 @@
                 <p>This was a group project with <a href="https://github.com/jkane88" target="_blank">Justin Kane</a>.</p>
                 <br>
                 <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/project1" target="_blank">Source</a></li>
-                    <li><a href="https://jason-michael.github.io/project1/" target="_blank">Site</i></a></li>
+                    <li><a href="https://github.com/jason-michael/iss-tracker" target="_blank">Code</a></li>
+                    <li><a href="https://jason-michael.github.io/iss-tracker/" target="_blank">Site</i></a></li>
                 </ul>
             </div>
         </figure>
@@ -82,7 +85,7 @@
                 <p>Explore GIPHY using the GIPHY API. Search topics, see trending gifs, save your favorites.</p>
                 <br>
                 <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/giphy-studio" target="_blank">Source</a></li>
+                    <li><a href="https://github.com/jason-michael/giphy-studio" target="_blank">Code</a></li>
                     <li><a href="https://jason-michael.github.io/giphy-studio/" target="_blank">Site</i></a></li>
                 </ul>
             </div>
@@ -96,8 +99,8 @@
                 <p>Rock/paper/scissors multiplayer game using Firebase. Chat with players and spectators.</p>
                 <br>
                 <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/RPS-Multiplayer" target="_blank">Source</a></li>
-                    <li><a href="https://jason-michael.github.io/RPS-Multiplayer/" target="_blank">Site</i></a></li>
+                    <li><a href="https://github.com/jason-michael/rps-multiplayer" target="_blank">Code</a></li>
+                    <li><a href="https://jason-michael.github.io/rps-multiplayer/" target="_blank">Site</i></a></li>
                 </ul>
             </div>
         </figure>
@@ -110,8 +113,8 @@
                 <p>Hangman to the tune of supercars. Guess letters to figure out the word.</p>
                 <br>
                 <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/Word-Guess-Game" target="_blank">Source</a></li>
-                    <li><a href="https://jason-michael.github.io/Word-Guess-Game/" target="_blank">Site</i></a></li>
+                    <li><a href="https://github.com/jason-michael/hangman-game" target="_blank">Code</a></li>
+                    <li><a href="https://jason-michael.github.io/hangman-game/" target="_blank">Site</i></a></li>
                 </ul>
             </div>
         </figure>
@@ -124,8 +127,8 @@
                 <p>Simple trivia game using JS timeouts and intervals and OpenTrivia DB.</p>
                 <br>
                 <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/TriviaGame" target="_blank">Source</a></li>
-                    <li><a href="https://jason-michael.github.io/TriviaGame/" target="_blank">Site</i></a></li>
+                    <li><a href="https://github.com/jason-michael/trivia-game" target="_blank">Code</a></li>
+                    <li><a href="https://jason-michael.github.io/trivia-game/" target="_blank">Site</i></a></li>
                 </ul>
             </div>
         </figure>
@@ -133,22 +136,8 @@
         <!-- "Other work" block -->
         <section class="block block2">
             <h3>Like what you see?</h3>
-            <p>Check out my <a href="https://github.com/jason-michael?tab=repositories" class="block-link" target="_blank">
-                    other work.</a></p>
+            <p>Check out my <a href="portfolio.html" class="block-link">portfolio.</a></p>
         </section>
-
-        <figure class="figure6">
-            <img src="assets/images/liri.gif" class="figure-img">
-            <div class="figure-overlay">
-                <h3><span class="node">Node.js:</span> LIRI</h3>
-                <p>LIRI is a command line node app that takes in parameters and gives you back data. The repo readme demonstrates all of LIRI's functions.</p>
-                <br>
-                <ul class="overlay-links">
-                    <li><a href="https://github.com/jason-michael/liri-node-app" target="_blank">Source</a></li>
-                </ul>
-            </div>
-        </figure>
-
 
     </section><!-- /Showcase -->
 
@@ -163,6 +152,7 @@
     </footer>
 
     <!-- javascript -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>

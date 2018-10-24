@@ -90,11 +90,6 @@ figure:hover .figure-img {
     transition: all .4s;
 }
 
-.figure6 .figure-overlay {
-    left: auto;
-    right: 0;
-}
-
 .figure-overlay h3 {
     color: #eee;
     flex: .25;
@@ -208,9 +203,4 @@ figure:hover .figure-img {
     .figure5 {
         grid-column: span 2;
     }
-
-    .figure6 {
-        grid-column: span 6;
-    }
-
 }

@@ -49,7 +49,7 @@
 
 /* Sidemenu open (used as a toggle) */
 #sidemenu.open {
-    height: 23%;
+    height: calc(64px * 4);
 }
 
 /*==============================

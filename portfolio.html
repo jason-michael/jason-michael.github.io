@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jason Michael | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <h1 onclick="navigate('index.html')">JM<span class="highlight">//PORTFOLIO</span></h1>
+        </div>
+        <div class="menu-button" onclick="toggleSidemenu()">
+            <i id="menu-button-icon" class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+    <!-- Sidemenu -->
+    <div id="sidemenu">
+        <a href="index.html" class="sidemenu-link" onclick="toggleSidemenu()">Home</a>
+        <a href="portfolio.html" class="sidemenu-link">Portfolio</a>
+        <a href="#contact" class="sidemenu-link" onclick="toggleSidemenu(), flashFooter()">Contact</a>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects"></section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <ul>
+            <li><a href="https://github.com/jason-michael" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jason-michael-23bb83164/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/people/Jason-Michael/100021793363734" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+        <a href="mailto:michael.jason@outlook.com">michael.jason@outlook.com</a>
+    </footer>
+
+    <!-- javascript -->
+    <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

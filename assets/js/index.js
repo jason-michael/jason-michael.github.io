@@ -8,6 +8,10 @@ const themedElements = [document.body, header, menu];
 let isMenuOpen = false;
 let wrapperY = 50;
 
+function navigate(url) {
+    window.location.href = url;
+}
+
 function toggleSidemenu() {
     if (!isMenuOpen) {
         menu.classList.add('open');
