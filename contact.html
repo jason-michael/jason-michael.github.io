@@ -12,7 +12,7 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
 
 <body>
@@ -26,13 +26,43 @@
         </div>
     </header>
 
-
     <!-- Sidemenu -->
     <div id="sidemenu">
         <a href="index.html" class="sidemenu-link" onclick="toggleSidemenu()">Home</a>
         <a href="portfolio.html" class="sidemenu-link">Portfolio</a>
         <a href="contact.html" class="sidemenu-link" onclick="toggleSidemenu(), flashFooter()">Contact</a>
     </div>
+
+    <main id="contact">
+        <!-- Email -->
+        <div class="contact-box">
+            <a href="mailto:michael.jason@outlook.com" target="_blank">
+                <i class=" far fa-envelope fa-3x" aria-hidden="true"></i>
+                <p>Email</p>
+            </a>
+        </div>
+        <!-- Github -->
+        <div class="contact-box">
+            <a href="https://github.com/jason-michael" target="_blank">
+                <i class=" fab fa-github fa-3x" aria-hidden="true"></i>
+                <p>Github</p>
+            </a>
+        </div>
+        <!-- Facebook -->
+        <div class="contact-box">
+            <a href="https://www.facebook.com/people/Jason-Michael/100021793363734" target="_blank">
+                <i class=" fab fa-facebook fa-3x" aria-hidden="true"></i>
+                <p>Facebook</p>
+            </a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="contact-box">
+            <a href="https://www.linkedin.com/in/jason-michael-23bb83164/" target="_blank">
+                <i class=" fab fa-linkedin-in fa-3x" aria-hidden="true"></i>
+                <p>LinkedIn</p>
+            </a>
+        </div>
+    </main>
     
     <!-- javascript -->
     <script src="assets/js/index.js"></script>
