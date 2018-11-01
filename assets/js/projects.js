@@ -64,7 +64,15 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
     return project;
 }
 
-const projects = [{
+const projects = [
+    {
+        title: 'Bamazon - Node & MySQL',
+        description: 'Bamazon is a fictional app that lets users modify data (CRUD) in a SQL database using the node command line.<br><br>The link below contains a full (and larger) demonstration of Bamazon\'s functionality.',
+        imgPath: 'assets/images/bamazon.gif',
+        codeUrl: 'https://github.com/jason-michael/bamazon',
+        siteUrl: '',
+    },    
+    {
         title: 'Node Word Guess CLI Game',
         description: 'Command-line word guess game using node.js, inquirer (npm) and constructor functions.<br><br>This project can be played by installing the package from npm. Installation instructions are provided in the link below.<br>',
         imgPath: 'assets/images/node_hangman.gif',
