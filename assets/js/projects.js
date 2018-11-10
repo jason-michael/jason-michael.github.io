@@ -66,6 +66,13 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
 
 const projects = [
     {
+        title: 'Friend Finder',
+        description: `This full stack site will take a user's survey results, compare their answers with those from other (fictional) users, and find the most compatible match. <br><br>This site uses Express for Node.`,
+        imgPath: 'https://user-images.githubusercontent.com/30272940/48278425-0ee1f100-e413-11e8-9c5c-395341d09086.jpg',
+        codeUrl: 'https://github.com/jason-michael/friend-finder',
+        siteUrl: 'https://blooming-refuge-40534.herokuapp.com/',
+    }, 
+    {
         title: 'Bamazon - Node & MySQL',
         description: 'Bamazon is a fictional app that lets users modify data (CRUD) in a SQL database using the node command line.<br><br>The link below contains a full (and larger) demonstration of Bamazon\'s functionality.',
         imgPath: 'assets/images/bamazon.gif',
