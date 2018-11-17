@@ -66,19 +66,26 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
 
 const projects = [
     {
+        title: 'Simple Todo',
+        description: `This is a basic Node application with an Express/MySQL backend. Features include standard todo list functionality: add, toggle, edit, and delete todos, all stored in a MySQL database.`,
+        imgPath: 'https://user-images.githubusercontent.com/30272940/48655852-8c44cd00-e9e2-11e8-8f54-394877f4f30e.jpg',
+        codeUrl: 'https://github.com/jason-michael/express-mysql-todo',
+        siteUrl: 'https://desolate-ravine-82175.herokuapp.com/',
+    },
+    {
         title: 'Friend Finder',
         description: `This full stack site will take a user's survey results, compare their answers with those from other (fictional) users, and find the most compatible match. <br><br>This site uses Express for Node.`,
         imgPath: 'https://user-images.githubusercontent.com/30272940/48278425-0ee1f100-e413-11e8-9c5c-395341d09086.jpg',
         codeUrl: 'https://github.com/jason-michael/friend-finder',
         siteUrl: 'https://blooming-refuge-40534.herokuapp.com/',
-    }, 
+    },
     {
         title: 'Bamazon - Node & MySQL',
         description: 'Bamazon is a fictional app that lets users modify data (CRUD) in a SQL database using the node command line.<br><br>The link below contains a full (and larger) demonstration of Bamazon\'s functionality.',
         imgPath: 'assets/images/bamazon.gif',
         codeUrl: 'https://github.com/jason-michael/bamazon',
         siteUrl: '',
-    },    
+    },
     {
         title: 'Node Word Guess CLI Game',
         description: 'Command-line word guess game using node.js, inquirer (npm) and constructor functions.<br><br>This project can be played by installing the package from npm. Installation instructions are provided in the link below.<br>',
@@ -99,34 +106,6 @@ const projects = [
         imgPath: 'assets/images/iss.png',
         codeUrl: 'https://github.com/jason-michael/iss-tracker',
         siteUrl: 'https://jason-michael.github.io/iss-tracker/',
-    },
-    {
-        title: 'Rock Paper Scissors Multiplayer',
-        description: 'Rock/paper/scissors multiplayer game using Firebase\'s real-time database. Features include a single lobby that supports two players, spectators, cross-platform gameplay, and instant chat. Mobile-responsive.',
-        imgPath: 'assets/images/rps.png',
-        codeUrl: 'https://github.com/jason-michael/rps-multiplayer',
-        siteUrl: 'https://jason-michael.github.io/rps-multiplayer/',
-    },
-    {
-        title: 'Giphy Studio',
-        description: 'Explore gifs from GIPHY. Users can search for topics, see what\'s trending and save their favorites. Mobile-responsive.',
-        imgPath: 'assets/images/giphy.png',
-        codeUrl: 'https://github.com/jason-michael/giphy-studio',
-        siteUrl: 'https://jason-michael.github.io/giphy-studio/',
-    },
-    {
-        title: 'Trivia Game',
-        description: 'Timed trivia game using JS timeouts and intervals and the Open Trivia DB API. Features multiple question categories, difficulties, and question counts. Mobile-responsive.',
-        imgPath: 'assets/images/trivia.png',
-        codeUrl: 'https://github.com/jason-michael/trivia-game',
-        siteUrl: 'https://jason-michael.github.io/trivia-game/',
-    },
-    {
-        title: 'Hangman Game',
-        description: 'Simple word guess game with an automotive theme. Guess letters correctly to figure out the word.',
-        imgPath: 'assets/images/hangman.png',
-        codeUrl: 'https://github.com/jason-michael/hangman-game',
-        siteUrl: 'https://jason-michael.github.io/hangman-game/',
     }
 ];
 
@@ -142,3 +121,4 @@ function addProjects() {
 }
 
 addProjects();
+
