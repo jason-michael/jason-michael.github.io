@@ -64,7 +64,20 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
     return project;
 }
 
-const projects = [
+const projects = [{
+        title: 'Curator',
+        description: `Establish, catagorize, and organize your saved bookmarks into a proficient dashboard.`,
+        imgPath: 'assets/images/curator.jpg',
+        codeUrl: 'https://github.com/jason-michael/project-2',
+        siteUrl: 'https://codingcurator.herokuapp.com/',
+    },
+    {
+        title: 'ISS Tracker',
+        description: 'View the overhead location of the International Space Station. Users can enter a street address and get an estimation of when the ISS will be over that location next, and for how long. Mobile-responsive.',
+        imgPath: 'assets/images/iss.png',
+        codeUrl: 'https://github.com/jason-michael/iss-tracker',
+        siteUrl: 'https://jason-michael.github.io/iss-tracker/',
+    },
     {
         title: 'Simple Todo',
         description: `This is a basic Node application with an Express/MySQL backend. Features include standard todo list functionality: add, toggle, edit, and delete todos, all stored in a MySQL database.`,
@@ -73,39 +86,18 @@ const projects = [
         siteUrl: 'https://desolate-ravine-82175.herokuapp.com/',
     },
     {
-        title: 'Friend Finder',
-        description: `This full stack site will take a user's survey results, compare their answers with those from other (fictional) users, and find the most compatible match. <br><br>This site uses Express for Node.`,
-        imgPath: 'https://user-images.githubusercontent.com/30272940/48278425-0ee1f100-e413-11e8-9c5c-395341d09086.jpg',
-        codeUrl: 'https://github.com/jason-michael/friend-finder',
-        siteUrl: 'https://blooming-refuge-40534.herokuapp.com/',
+        title: 'Rock Paper Scissors Multiplayer',
+        description: 'Rock/paper/scissors multiplayer game using Firebase\'s real-time database. Features include a single lobby that supports two players, spectators, cross-platform gameplay, and instant chat. Mobile-responsive.',
+        imgPath: 'assets/images/rps.png',
+        codeUrl: 'https://github.com/jason-michael/rps-multiplayer',
+        siteUrl: 'https://jason-michael.github.io/rps-multiplayer/',
     },
     {
-        title: 'Bamazon - Node & MySQL',
-        description: 'Bamazon is a fictional app that lets users modify data (CRUD) in a SQL database using the node command line.<br><br>The link below contains a full (and larger) demonstration of Bamazon\'s functionality.',
-        imgPath: 'assets/images/bamazon.gif',
-        codeUrl: 'https://github.com/jason-michael/bamazon',
-        siteUrl: '',
-    },
-    {
-        title: 'Node Word Guess CLI Game',
-        description: 'Command-line word guess game using node.js, inquirer (npm) and constructor functions.<br><br>This project can be played by installing the package from npm. Installation instructions are provided in the link below.<br>',
-        imgPath: 'assets/images/node_hangman.gif',
-        codeUrl: 'https://github.com/jason-michael/node-hangman',
-        siteUrl: '',
-    },
-    {
-        title: 'Node Language Interpretation and Recognition Interface (LIRI)',
-        description: 'LIRI is a very basic command line node app that accepts input and returns data. Functionality includes quickly searching Spotify for song info, returning upcoming concert data for a given band, and more. Check out the link below to see all of LIRI\'s functions.',
-        imgPath: 'assets/images/liri.gif',
-        codeUrl: 'https://github.com/jason-michael/liri-node-app',
-        siteUrl: '',
-    },
-    {
-        title: 'ISS Tracker',
-        description: 'View the overhead location of the International Space Station. Users can enter a street address and get an estimation of when the ISS will be over that location next, and for how long. Mobile-responsive.',
-        imgPath: 'assets/images/iss.png',
-        codeUrl: 'https://github.com/jason-michael/iss-tracker',
-        siteUrl: 'https://jason-michael.github.io/iss-tracker/',
+        title: 'Trivia Game',
+        description: 'Timed trivia game using JS timeouts and intervals and the Open Trivia DB API. Features multiple question categories, difficulties, and question counts. Mobile-responsive.',
+        imgPath: 'assets/images/trivia.png',
+        codeUrl: 'https://github.com/jason-michael/trivia-game',
+        siteUrl: 'https://jason-michael.github.io/trivia-game/',
     }
 ];
 
@@ -121,4 +113,3 @@ function addProjects() {
 }
 
 addProjects();
-
