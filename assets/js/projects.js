@@ -31,8 +31,25 @@ function flashFooter() {
     }, 3000);
 }
 
-function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
+function onImgClick(e) {
 
+    // Create lightbox igmg
+    let img = document.createElement('img');
+
+    // Set attributes
+    img.src = e.src;
+    img.classList.add("lightbox-img");
+
+    // Add listener to close img
+    img.addEventListener("click", () => {
+        document.body.removeChild(img);
+    });
+
+    // Add img to document
+    document.body.appendChild(img);
+}
+
+function createProject(id, title, description, imgPath, codeUrl, siteUrl, siteDesc) {
     let _id = 'project-' + id;
     let _isFlipped;
     let imgAlign;
@@ -48,14 +65,14 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
     const project = (`
         <div id=${_id} class="project${_isFlipped}">
             <div class="project-image-box">
-                <img src="${imgPath}" class="project-img" alt="" style="object-position:${imgAlign};">
+                <img src="${imgPath}" class="project-img" alt="" style="object-position:${imgAlign};" onclick="onImgClick(this)">
             </div>
             <div class="project-info-box">
                 <h1 class="project-title">${title}</h1>
                 <p class="project-description">${description}</p>
                 <ul class="project-links">
-                    <li><a href="${codeUrl}" class="project-link" target="_blank">Code</a></li>
-                    <li><a href="${siteUrl}" class="project-link" target="_blank">Site</a></li>
+                ${codeUrl ? `<li><a href="${codeUrl}" class="project-link" target="_blank">Code</a></li>` : ""}                    
+                    <li><a href="${siteUrl}" class="project-link" target="_blank">${siteDesc || "Site"}</a></li>
                 </ul>
             </div>
         </div>
@@ -65,11 +82,20 @@ function createProject(id, title, description, imgPath, codeUrl, siteUrl) {
 }
 
 const projects = [{
-        title: 'Curator',
-        description: `Establish, catagorize, and organize your saved bookmarks into a proficient dashboard.`,
-        imgPath: 'assets/images/curator.jpg',
-        codeUrl: 'https://github.com/jason-michael/project-2',
-        siteUrl: 'https://codingcurator.herokuapp.com/',
+        title: 'FLSD',
+        description: `A safety solution engineered for to prevent forklift-related accidents, injuries, and property damage
+        by providing real-time monitoring and safety alerts well before accidents occur.`,
+        imgPath: 'assets/images/flsd-web-demo.png',
+        siteUrl: 'https://amh-dev.github.io/flsd-web-demo/',
+        siteDesc: 'Interactive Demo'
+    },
+    {
+        title: 'Midwaste',
+        description: 'Top-down zombie survival game you can play in your web browser.',
+        imgPath: 'assets/images/mw-1.png',
+        codeUrl: 'https://github.com/jason-michael/project3',
+        siteUrl: 'http://midwaste.herokuapp.com/home',
+        siteDesc: 'Play'
     },
     {
         title: 'ISS Tracker',
@@ -105,8 +131,8 @@ function addProjects() {
     const separator = '<hr class=project-separator>';
 
     projects.forEach((p, index) => {
-        const project = createProject((index + 1), p.title, p.description, p.imgPath, p.codeUrl, p.siteUrl, p.isFlipped);
-
+        const project = createProject((index + 1), p.title, p.description, p.imgPath, p.codeUrl, p.siteUrl, p.siteDesc, p.isFlipped);
+        
         projectsArea.innerHTML += project;
         projectsArea.innerHTML += separator;
     });
